@@ -118,7 +118,7 @@
     <span style="font-size:20px;">🔥</span>
     <div>
       <div class="header-title">BRANDRISKPROGNOS</div>
-      <div class="header-sub">Idag + 5 dagar · 5 platser</div>
+      <div class="header-sub">Idag och fem dagar framåt · Norra slingan Dalarna</div>
     </div>
   </div>
   <div class="header-right">
@@ -155,7 +155,7 @@
       <div class="metric-sub" id="max-fly-info">—</div>
     </div>
     <div class="metric-card">
-      <div class="metric-label">Genomsnitt flygning · 6 dagar</div>
+      <div class="metric-label">Genomsnittlig sannolikhet för flygning · 6 dagar</div>
       <div class="metric-value" id="avg-fly">—</div>
       <div class="metric-sub">alla platser</div>
     </div>
@@ -172,7 +172,7 @@
     <span class="fwi-badge fwi-r3">3 Måttlig skogsbrandrisk</span>
     <span class="fwi-badge fwi-r4">4 Stor skogsbrandrisk</span>
     <span class="fwi-badge fwi-r5">5 Mycket stor skogsbrandrisk</span>
-    <span class="fwi-badge fwi-r6">6 Extremt stor skogsbrandrisk</span>
+    <span class="fwi-badge fwi-r6">6 (5E) Extremt stor skogsbrandrisk</span>
   </div>
 
   <div class="dashboard-grid">
@@ -603,7 +603,7 @@ function renderEmailPreview() {
     '',
     'Daglig sammanfattning',
     '─'.repeat(54),
-    pad('Datum',16) + pad('Max FWI',12) + pad('Medel FWI',14) + 'Medel flygsannolikhet'
+    pad('Datum',16) + pad('Max FWI',12) + pad('Medel FWI',14) + 'Genomsnittlig flygsannolikhet'
   ];
   for (const d of forecastDates) {
     const day  = allData[d]||{};
